@@ -13,8 +13,8 @@ import ClientOnly from './components/ClientOnly';
 import getCurrentUser from './actions/getCurrentUser';
 
 export const metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb Clone',
+  title: 'Colitas',
+  description: 'Colitas, un buen lugar para adoptar mascotas',
 }
 
 const font = Nunito({ 
