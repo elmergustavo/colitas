@@ -20,7 +20,7 @@ interface ListingInfoProps {
   roomCount: number;
   bathroomCount: number;
   category: {
-    icon: IconType,
+    icon: string | null | undefined;
     label: string;
     description: string;
   } | undefined

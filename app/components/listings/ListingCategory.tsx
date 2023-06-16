@@ -1,22 +1,23 @@
 'use client';
 
+import Image from "next/image";
 import { IconType } from "react-icons";
 
 interface CategoryViewProps {
-  icon: IconType,
+  icon: string | null | undefined;
   label: string,
   description: string
 }
 
 const CategoryView: React.FC<CategoryViewProps> = ({ 
-  icon: Icon,
+  icon,
   label,
   description
  }) => {
   return ( 
     <div className="flex flex-col gap-6">
       <div className="flex flex-row items-center gap-4">
-        <Icon size={40} className="text-neutral-600" />
+      <Image width={200} height={200} src={icon || '/placeholder.jpg'} alt='img' />
         <div className="flex flex-col">
             <div 
               className="text-lg font-semibold"
