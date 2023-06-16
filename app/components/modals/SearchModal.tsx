@@ -120,8 +120,8 @@ const SearchModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Where do you wanna go?"
-        subtitle="Find the perfect location!"
+        title="En que parte quieres buscar una mascota"
+        subtitle="¡Encuentra la mascota perfecta!"
       />
       <CountrySelect 
         value={location} 
@@ -184,7 +184,7 @@ const SearchModal = () => {
   return (
     <Modal
       isOpen={searchModal.isOpen}
-      title="Filters"
+      title="Filtros"
       actionLabel={actionLabel}
       onSubmit={onSubmit}
       secondaryActionLabel={secondaryActionLabel}

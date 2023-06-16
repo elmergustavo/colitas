@@ -114,10 +114,10 @@ const RentModal = () => {
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.PRICE) {
-      return 'Create'
+      return 'Crear una cuenta'
     }
 
-    return 'Next'
+    return 'Siguiente'
   }, [step]);
 
   const secondaryActionLabel = useMemo(() => {
@@ -131,8 +131,8 @@ const RentModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Which of these best describes your place?"
-        subtitle="Pick a category"
+        title="¿Cuál de estos describe mejor tu lugar?"
+        subtitle="Selecciona una categoria"
       />
       <div 
         className="
@@ -179,7 +179,7 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Share some basics about your place"
+          title="Comparte más información sobre tu mascota"
           subtitle="What amenitis do you have?"
         />
         <Counter 
@@ -274,7 +274,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="Colitas your home!"
+      title="Colitas Home!"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}
