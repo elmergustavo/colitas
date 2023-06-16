@@ -163,8 +163,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Where is your place located?"
-          subtitle="Help guests find you!"
+          title="¿Dónde estás ubicado?"
+          subtitle="Ayudanos a encontrarte fácilmente!"
         />
         <CountrySelect 
           value={location} 
@@ -210,8 +210,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Add a photo of your place"
-          subtitle="Show guests what your place looks like!"
+          title="Agrega una foto de tu mascota"
+          subtitle="Muesta como luce tu mascota!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -253,12 +253,12 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Now, set your price"
-          subtitle="How much do you charge per night?"
+          title="¿Cúal es la edad de tu gato?"
+          subtitle="Ingresa la edad en meses"
         />
         <Input
           id="price"
-          label="Price"
+          label="Edad"
           formatPrice 
           type="number" 
           disabled={isLoading}

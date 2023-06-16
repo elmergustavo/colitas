@@ -70,12 +70,12 @@ const LoginModal = () => {
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading
-        title="Welcome back"
-        subtitle=" to your accountLogin!"
+        title="Bienvenido de nuevo"
+        subtitle="Iniciar sesión!"
       />
       <Input
         id="email"
-        label="Email"
+        label="Correo Electrónico"
         disabled={isLoading}
         register={register}  
         errors={errors}
