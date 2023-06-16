@@ -225,12 +225,12 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="How would you describe your place?"
-          subtitle="Short and sweet works best!"
+          title="Información de tu mascota"
+          subtitle="Describe a tu mascota"
         />
         <Input
           id="title"
-          label="Title"
+          label="Nombre"
           disabled={isLoading}
           register={register}
           errors={errors}
@@ -239,7 +239,7 @@ const RentModal = () => {
         <hr />
         <Input
           id="description"
-          label="Description"
+          label="Descripción"
           disabled={isLoading}
           register={register}
           errors={errors}

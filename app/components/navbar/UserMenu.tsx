@@ -58,7 +58,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             cursor-pointer
           "
         >
-          Colitas your home
+          Hacer una publicación
         </div>
         <div 
         onClick={toggleOpen}
