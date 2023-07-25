@@ -64,12 +64,12 @@ const RegisterModal= () => {
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading
-        title="Welcome to Colitas"
-        subtitle="Create an account!"
+        title="¡Bienvenido a Colitas! "
+        subtitle="Tu comunidad de adopción 🐾"
       />
       <Input
         id="email"
-        label="Email"
+        label="Correo Electrónico"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -77,7 +77,7 @@ const RegisterModal= () => {
       />
       <Input
         id="name"
-        label="Name"
+        label="Nombre de Usuario"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -85,7 +85,7 @@ const RegisterModal= () => {
       />
       <Input
         id="password"
-        label="Password"
+        label="Contraseña"
         type="password"
         disabled={isLoading}
         register={register}
@@ -100,15 +100,9 @@ const RegisterModal= () => {
       <hr />
       <Button 
         outline 
-        label="Continue with Google"
+        label="Continuar con Google"
         icon={FcGoogle}
         onClick={() => signIn('google')} 
-      />
-      <Button 
-        outline 
-        label="Continue with Github"
-        icon={AiFillGithub}
-        onClick={() => signIn('github')}
       />
       <div 
         className="
@@ -118,7 +112,7 @@ const RegisterModal= () => {
           font-light
         "
       >
-        <p>Already have an account?
+        <p>¿Ya tienes una cuenta?
           <span 
             onClick={onToggle} 
             className="
@@ -126,7 +120,7 @@ const RegisterModal= () => {
               cursor-pointer 
               hover:underline
             "
-            > Log in</span>
+            > Iniciar Sesión </span>
         </p>
       </div>
     </div>
@@ -136,7 +130,7 @@ const RegisterModal= () => {
     <Modal
       disabled={isLoading}
       isOpen={registerModal.isOpen}
-      title="Register"
+      title="Crear Cuenta"
       actionLabel="Continue"
       onClose={registerModal.onClose}
       onSubmit={handleSubmit(onSubmit)}

@@ -119,7 +119,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
            Edad {price}
           </div>
           {!reservation && (
-            <div className="font-light">Años</div>
+            <div className="font-light">Meses</div>
           )}
         </div>
         {onAction && actionLabel && (

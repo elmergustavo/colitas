@@ -25,27 +25,22 @@ export const categories = [
   {
     label: 'Perros',
     icon: '/dog.png',
-    description: 'This property is close to the beach!',
+    description: 'Únicos y encantadores. Los perros mestizos tienen la magia de la diversidad en su ADN. ¡Adopta un compañero único y descubre un amor sin igual!',
   },
   {
     label: 'Gatos',
     icon: '/cart.png',
-    description: 'This property is close to the beach!',
+    description: 'Elegancia en movimiento, miradas que encantan. Adopta un gato y descubre el misterio y cariño que te conquistarán a cada ronroneo',
   },
   {
-    label: 'Otros',
-    icon: '/otros.png',
-    description: 'This property is close to the beach!',
-  },
-  {
-    label: 'raza',
+    label: 'Raza',
     icon: '/raza.png',
-    description: 'This property is close to the beach!',
+    description: 'Descubre la elegancia y carácter distintivo que hacen de ellos verdaderos compañeros de vida. ¡Encuentra tu raza perfecta y lleva a casa a un amigo excepcional!',
   },
   {
-    label: 'Gatos y perros',
+    label: 'Gatos y Perros',
     icon: '/catosperros.png',
-    description: 'This property is close to the beach!',
+    description: 'Amor en todas sus formas. Dos especies, una conexión única. Adopta un peludo o un minino y descubre la felicidad en cada ronroneo o cola que mueve. ¡La mejor compañía que llenará tu vida de alegría!',
   },
  
 ]
