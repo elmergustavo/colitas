@@ -124,7 +124,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 />
                 <hr />
                 <MenuItem 
-                  label="Cerrar Sesisión" 
+                  label="Cerrar Sesión" 
                   onClick={() => signOut()}
                 />
               </>

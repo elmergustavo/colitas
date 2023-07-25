@@ -114,7 +114,7 @@ const RentModal = () => {
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.PRICE) {
-      return 'Crear una cuenta'
+      return 'Crea el perfil de tu mascota'
     }
 
     return 'Siguiente'
@@ -125,13 +125,13 @@ const RentModal = () => {
       return undefined
     }
 
-    return 'Back'
+    return 'Regresar'
   }, [step]);
 
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="¿Cuál de estos describe mejor tu lugar?"
+        title="¿Cuál de estos describe mejor a tu amigo de cuatro patas?"
         subtitle="Selecciona una categoria"
       />
       <div 
@@ -210,8 +210,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Agrega una foto de tu mascota"
-          subtitle="Muesta como luce tu mascota!"
+          title="¡Nos encantaría conocer a tu adorable compañero peludo!🐾"
+          subtitle="¡Muesta como luce tu mascota!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -226,7 +226,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Información de tu mascota"
-          subtitle="Describe a tu mascota"
+          subtitle="¡Cuéntanos sobre tu mascota!"
         />
         <Input
           id="title"
@@ -253,7 +253,7 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="¿Cúal es la edad de tu gato?"
+          title="¿Cuál es la edad de tu compañero peludo?"
           subtitle="Ingresa la edad en meses"
         />
         <Input
@@ -274,7 +274,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="Colitas Home!"
+      title="¡Adopta, no compres! 🐾"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}
